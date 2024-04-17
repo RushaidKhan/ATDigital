@@ -1,0 +1,212 @@
+/* Existing CSS */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.image-bg {
+  height: calc(100vh - 56px);
+  background-image: url(assets/andy-kelly-0E_vhMVqL9g-unsplash\ 2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  height: auto;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  background: linear-gradient(
+    45deg,
+    hsla(141, 54%, 55%, 1) 0%,
+    hsla(190, 78%, 49%, 1) 100%
+  );
+  color: white;
+  border-radius: 10px;
+}
+
+.text-box h1 {
+  font-size: 2.5vw;
+  margin-bottom: 20px;
+}
+
+.text-box button {
+  padding: 10px 20px;
+  background: #f28d35;
+  border: none;
+  color: white;
+  font-size: 1.2vw;
+  border-radius: 5px;
+}
+.section-two {
+  background-color: #f9f9f9;
+  padding: 50px 0;
+}
+
+.content {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 70%;
+}
+
+.content-holder {
+  padding: 20px;
+  align-items: baseline;
+}
+
+.content-holder h1 {
+  color: #6b3cc9;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.content-holder p {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.content-holder button {
+  background-color: #f28d35;
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.image-holder img {
+  max-width: 100%;
+  height: auto;
+}
+
+.faq {
+  width: 70%;
+  margin: auto;
+}
+
+.faq h1 {
+  color: #6b3cc9;
+  text-align: center;
+}
+.accordion-button {
+  color: #6b3cc9 !important;
+}
+footer {
+  background-color: #6b3cc9;
+}
+.footerOne {
+  padding: 40px;
+
+  width: 50%;
+  align-items: baseline;
+}
+.footerOneLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding: 10px;
+}
+.footerOne p {
+  color: white;
+}
+.footerTwo {
+  padding: 40px;
+}
+.footerTwo h1 {
+  color: white;
+  font-size: 21px;
+}
+.footerTwo h2 {
+  color: white;
+  font-size: 12px;
+}
+.footerThree {
+  padding: 40px;
+}
+.footerThree h1 {
+  color: white;
+  font-size: 21px;
+}
+.footerThree h2 {
+  color: white;
+  font-size: 12px;
+}
+.whiteLine {
+  border: 1px solid white;
+  width: 30%;
+  margin: auto;
+}
+.footerFour {
+  padding: 10px;
+}
+.footerFour h1 {
+  font-size: 14px;
+  text-align: center;
+  color: white;
+}
+.upperHalf {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+.partTwo {
+  display: flex;
+}
+.space {
+  border: 5px solid transparent;
+}
+
+@media (max-width: 576px) {
+  .footerOne,
+  .footerTwo,
+  .footerThree {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .upperHalf {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .text-box {
+    width: 90%;
+    left: 5%;
+  }
+
+  .text-box h1 {
+    font-size: 5vw;
+  }
+
+  .text-box button {
+    font-size: 2vw;
+  }
+  .content {
+    flex-direction: column;
+  }
+  .content {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+  .section-two:nth-child(even) .content {
+    flex-direction: row-reverse;
+  }
+}
